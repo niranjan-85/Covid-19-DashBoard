@@ -41,17 +41,224 @@
 
     <div class="container landing-section">
         <div class="row">
-            <div class="col catch-phrases">
+            <div class="col-md catch-phrases d-flex flex-column justify-content-center">
                 <h1>Save Yourself<br></h1>
                 <h1>Save The World.</h1>
-                <p>Coronavirus disease (Covid-19) is an infectious disease<br>caused by a new virus</p>
-                <button class="primary-button">Check Symptoms</button>
+                <p>Coronavirus disease (Covid-19) is an infectious disease caused <br> by a new virus.
+                    The disease causes respiratory illness (like the flu) <br>with symptoms such as a cough, fever, and in more severe cases <br> difficulty breathing.
+                </p>
+                <div class="SymptomsBtn d-flex ">
+                    <button class="primary-button">Check Symptoms</button>
+                </div>
             </div>
-            
-            <div class="col ">
-                <h4>
+            <div class="col">
+                <h4 class="text-center">
                     <img src="./images/landing.png" class="landing-logo">
                 </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container covid-data">
+        <div class="row d-flex justify-content-center align-items-center text-center">
+            <div class="col">
+                <h2 id="placeAffected">WorldWide</h2>
+            </div>
+            <div class="col">
+                <h2 id="confirmedCases">1,098,848</h2>
+                <p>Confirmed Cases</p>
+            </div>
+            <div class="col">
+                <h2 id="RecoveredCases">1,098,848</h2>
+                <p>Recovered</p>
+            </div>
+            <div class="col">
+                <h2 id="Deaths">1,098,848</h2>
+                <p>Deaths</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container symptoms">
+        <div class="row">
+            <div class="col">
+                <h4 class="text-center">
+                    <img src="images/symptoms.png" alt="" class="landing-logo">
+                </h4>
+            </div>
+            <div class="col">
+                <h1>What are the symptoms?</h1>
+                <p><br>COVID-19 symptoms range from mild to severe.<br>
+                    It takes 2-14 days after exposure for symptoms<br> to develop. Symptoms may include:
+                </p>
+                <div class="cases">
+                    <div class="row symp">
+                        <div class="col mt-2">
+                            <img src="images/check.png" alt="" class="check">
+                            <p>Resoiratory Distress</p>
+                        </div>
+                        <div class="col mt-2">
+                            <img src="images/check.png" alt="" class="check">
+                            <p>Hard Cough</p>
+                        </div>
+                    </div>
+                    <div class="row symp">
+                        <div class="col mt-2">
+                            <img src="images/check.png" alt="" class="check">
+                            <p>Shortness of Breath</p>
+                        </div>
+                        <div class="col mt-2">
+                            <img src="images/check.png" alt="" class="check">
+                            <p>Fever</p>
+                        </div>
+                    </div>
+                    <div class="row symp">
+                        <div class="col mt-2">
+                            <img src="images/check.png" alt="" class="check">
+                            <p>Kidney Failure</p>
+                        </div>
+                        <div class="col mt-2">
+                            <img src="images/check.png" alt="" class="check">
+                            <p>Headache</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid transmission-section">
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-center mx-5 spread-text">
+                <h1>How does novel<br> coronavirus spread?</h1>
+                <p>
+                    Health experts are still learning the details.<br> 
+                    Currently, it is thought to spread:
+                </p>
+                <div class="details-tab  d-flex align-items-center">
+                    <img src="images/check.png" alt="" class="check">
+                    <p>Via respiratory droplets produced<br>
+                        when an infected person coughs or sneezes.
+                    </p>
+                </div>
+                <div class="details-tab d-flex align-items-center" >
+                    <img src="images/check.png" alt="" class="check">
+                    <p>Between people who are in close contact<br>
+                         with one another (within about 6 feet).
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center prevention">
+                        <img src="images/animal.png" alt="" class="transmission-img">
+                        <h3>Animal<br>Contact</h3>
+                        <p>Stay at home if you begin to feel unwell, even with mild symptoms nose.</p>
+                    </div>
+                    <div class="col text-center prevention">
+                        <img src="images/air.png" alt="" class="transmission-img">
+                        <h3>Air<br>Transmission</h3>
+                        <p>Via respiratory droplets produced when infected person coughs or sneezes.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center prevention">
+                        <img src="images/object.png" alt="" class="transmission-img">
+                        <h3>Contaminate<br>Object</h3>
+                        <p>Call in advance and tell your provider of any recent travel or contact.</p>
+                    </div>
+                    <div class="col text-center prevention">
+                        <img src="images/hands.png" alt="" class="transmission-img">
+                        <h3>Personal<br>Contact</h3>
+                        <p>Call in advance and tell your provider of any recent travel or contact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container protect mt-5">
+        <h1 class="head">How can I protect myself from Covid-19 ?</h1>
+        <p class="subtitle">If you are traveling overseas (to China but also to other places)<br>
+            follow the CDC’s guidance:
+        </p>
+        <div class="prevention-section mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="care d-flex align-items-center">
+                        <img src="images/service1.png" alt="" class="service">
+                        <div class="service-typ mx-5">
+                            <h2 class="mt-3">Wear a Face Mask</h2>
+                            <p>Wash hands often with soap and water.<br>
+                               If not available, use hand sanitizer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="care d-flex align-items-center">
+                        <img src="images/service2.png" alt="" class="service">
+                        <div class="service-typ mx-5">
+                            <h2 class="mt-3">Cover Face When Coughing</h2>
+                            <p>Cover your mouth/nose with a tissue or
+                                <br> sleeve when coughing or sneezing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="care d-flex align-items-center">
+                        <img src="images/service5.png" alt="" class="service">
+                        <div class="service-typ mx-5">
+                            <h2 class="mt-3">Avoid Markets and Crowd</h2>
+                            <p>Cover your mouth/nose with a tissue or<br>
+                                 sleeve when coughing or sneezing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="care d-flex align-items-center">
+                        <img src="images/service3.png" alt="" class="service">
+                        <div class="service-typ mx-5">
+                            <h2 class="mt-3">Wash Your Hand Frequently</h2>
+                            <p>Wash hands often with soap and water.<br>
+                                 If not available, use hand sanitizer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="call-info d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2>Want to test Covid-19 ?</h2>
+                    <p>Our goal at Our World in Data is to provide testing data over time<br>
+                         for many countries around the world.
+                    </p>
+                    <div class="helpline">
+                        <div class="phone mt-4">
+                            <img src="images/phone.jpg" alt="" id="phone">
+                            <h2 class="d-inline">+91-11-23978046</h2><br>
+                        </div>
+                        <div class="mail mt-4">
+                            <img src="images/mail.png" alt="" id="mail">
+                            <h2 class="d-inline">ncov2019@gov.in</h2><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/heroes.png" alt="">
             </div>
         </div>
     </div>

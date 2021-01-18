@@ -15,6 +15,7 @@ body{
 
 header{
     background-color:  white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .inner{
@@ -67,7 +68,7 @@ li a{
     background-color: #EB4559;
     border-radius: 100px;
     font-size: 20px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -89,15 +90,20 @@ li a{
     margin-top: 50px;
 }
 
+
 .landing-logo{
     width: 500px;
 }
 
-.catch-phrases h1{
+.catch-phrases h1,
+.symptoms h1,
+.spread-text h1{
     font-size: 50px;
 }
 
-.catch-phrases p{
+.catch-phrases p,
+.symptoms p,
+.spread-text p{
     color: #6D7083;
     margin-top: 20px;
 }
@@ -107,16 +113,113 @@ li a{
     margin-top: 40px;
     padding: 10px 20px 10px 20px;
     font-size: 15px;
+    outline: none;
 }
 
-/* Nearby Covid Centers */
+/* Covid Data */
 
-/* Frontline Heroes */
+.covid-data{
+    margin-top: 100px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
 
-/* About Us */
+#confirmedCases,
+#Deaths,
+#placeAffected{
+    color:  #ca3d4d;
+}
 
-/* Footer */
+#RecoveredCases{
+    color:#60CC8A;
+}
 
+
+.covid-data p{
+    color: #6D7083;
+}
+
+
+/* Symptoms */
+
+.symptoms{
+    margin-top: 100px;
+}
+
+.symptoms p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.cases{
+    margin-top: 30px;
+}
+
+.check{
+    width: 20px;
+}
+
+#check{
+    width: 45px;
+}
+
+/* Transmission */
+
+.transmission-section{
+    background-color: #151D41;
+    padding-top: 50px;
+    color: white;
+}
+
+.prevention{
+    padding: 25px;
+    background-color: #484E68;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.details-tab p{
+    margin-left: 20px;
+}
+
+
+.transmission-img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+/* Prevention section */
+
+.head,
+.subtitle{
+    text-align: center;
+}
+
+.service{
+    height: 100px;
+    width: 75px;
+}
+
+.care,
+.phone,
+.mail{
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#phone{
+    height: 52px;
+    margin-right: 50px;
+    transform: rotate(-30deg);
+}
+
+#mail{
+    height: 52px;
+    margin-right: 50px;
+}
 
 /* Media Queries */
 
@@ -160,6 +263,25 @@ li a{
 
 @media all and (max-width:550px){
     .menu-list{
-        width: 70%;
+        width: 90%;
     }
+
+    .landing-logo{
+        width: 250px;
+    }
+
+    .catch-phrases{
+        margin-bottom: 70px;
+    }
+
+    .catch-phrases h1{
+        font-size: 30px;
+    }
+
+    .catch-phrases p,
+    .primary-button{
+        font-size: 15px;
+    }
+
+
 }
