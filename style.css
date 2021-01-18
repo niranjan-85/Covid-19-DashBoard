@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+header{
+    background-color:  white;
+}
+
+.inner{
+    display: flex;
+    justify-content: space-between;
+    padding:12px 0px 12px 0px;
+    background-color: white;
+}
+
+.menu{
+    position: relative;
+    flex: 2;
+}
+
+.logo{
+    flex: 0.5;
+}
+
+#logo-img{
+    width: 200px;  
+}
+
+/* nav links */
+.menu-list{
+    float: right;
+    display: flex;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+li a{
+    color: #202122 !important;
+}
+
+.menu-list a:hover,
+.menu-list a:active{
+    cursor: pointer;
+    color: #EB4559 !important;
+    transition: all 0.5s ease;
+}
+
+/* navbar open button  */
+#explore-btn,
+.primary-button{
+    outline: none;
+    border: none;
+    display: none;
+    color: white;
+    background-color: #EB4559;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#explore-btn:hover,
+.primary-button:hover{
+    color: white;
+    background-color:  #ca3d4d;
+    transition: all 0.3s ease;
+}
+
+.open{
+    transform: translateX(890px);
+}
+
+/* landing-section */
+
+.landing-section{
+    margin-top: 50px;
+}
+
+.landing-logo{
+    width: 500px;
+}
+
+.catch-phrases h1{
+    font-size: 50px;
+}
+
+.catch-phrases p{
+    color: #6D7083;
+    margin-top: 20px;
+}
+
+.primary-button{
+    display: block;
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+}
+
+/* Nearby Covid Centers */
+
+/* Frontline Heroes */
+
+/* About Us */
+
+/* Footer */
+
+
+/* Media Queries */
+
+@media all and (max-width:1179px){
+    /* Navbar */
+    #explore-btn:active,
+    .menu,
+    .inner{
+        display: block;
+    }
+
+    li a{
+        margin-top: 40px;
+        border-bottom: 2px solid black;
+    }
+
+    .menu-list{
+        background-color:  #F4F4F4;
+        float: left;
+        flex-direction: column;
+        position: fixed;
+        top: -20px;
+        left: -945px;
+        height: 100vh;
+        width: 50%;
+        transition: transform 0.5s;
+    }
+
+    #explore-btn{
+        float: right;
+        display: inline; 
+        font-size: 15px;
+    }
+
+    #logo-img{
+        float: left;
+        width: 150px;
+    }
+}
+
+
+@media all and (max-width:550px){
+    .menu-list{
+        width: 70%;
+    }
+}
