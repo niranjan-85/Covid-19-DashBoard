@@ -1,0 +1,27 @@
+{
+  "name": "covid-19-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "navbar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranjan-85/Covid-19-DashBoard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niranjan-85/Covid-19-DashBoard/issues"
+  },
+  "homepage": "https://github.com/niranjan-85/Covid-19-DashBoard#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

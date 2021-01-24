@@ -15,8 +15,13 @@ body{
 
 header{
     background-color:  white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+
 
 .inner{
     display: flex;
@@ -51,8 +56,7 @@ li a{
     color: #202122 !important;
 }
 
-.menu-list a:hover,
-.menu-list a:active{
+.menu-list a:hover{
     cursor: pointer;
     color: #EB4559 !important;
     transition: all 0.5s ease;
@@ -91,19 +95,18 @@ li a{
 }
 
 
-.landing-logo{
-    width: 500px;
-}
-
 .catch-phrases h1,
 .symptoms h1,
-.spread-text h1{
+.spread-text h1,
+.call-info h1{
     font-size: 50px;
 }
 
 .catch-phrases p,
 .symptoms p,
-.spread-text p{
+.spread-text p,
+.call-info p
+{
     color: #6D7083;
     margin-top: 20px;
 }
@@ -114,6 +117,7 @@ li a{
     padding: 10px 20px 10px 20px;
     font-size: 15px;
     outline: none;
+    border: none;
 }
 
 /* Covid Data */
@@ -123,6 +127,20 @@ li a{
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     padding: 20px 0px 20px 0px;
     border-radius: 10px;
+}
+
+input[type=text]{
+    outline: none;
+    padding: 5px;
+}
+
+.search-country{
+    position: relative;
+}
+
+#error-icon{
+    width: 25px;
+    display: none;
 }
 
 #confirmedCases,
@@ -164,6 +182,7 @@ li a{
     width: 45px;
 }
 
+
 /* Transmission */
 
 .transmission-section{
@@ -196,9 +215,40 @@ li a{
     text-align: center;
 }
 
+.head{
+    font-size: 40px;
+}
+
+.protect{
+    margin-top: 100px;
+}
+
 .service{
     height: 100px;
     width: 75px;
+}
+
+.service-typ p,
+.subtitle{
+    font-size: 15px;
+    color:  #6D7083;
+}
+
+/* Helpline section */
+
+.helpline-section{
+    margin-top: 120px;
+}
+
+.landing-logo,
+.help-logo{
+    width: 550px;
+}
+
+.service-typ h2,
+.phone h2,
+.mail h2{
+    font-size: 20px;
 }
 
 .care,
@@ -218,8 +268,10 @@ li a{
 
 #mail{
     height: 52px;
-    margin-right: 50px;
+    margin-right: 20px;
 }
+
+
 
 /* Media Queries */
 
@@ -258,6 +310,12 @@ li a{
         float: left;
         width: 150px;
     }
+
+    .symptoms h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
 }
 
 
@@ -274,14 +332,55 @@ li a{
         margin-bottom: 70px;
     }
 
-    .catch-phrases h1{
+    .catch-phrases h1,
+    .spread-text h1,
+    .symptoms h1{
         font-size: 30px;
+        text-align: center;
     }
 
     .catch-phrases p,
-    .primary-button{
+    .primary-button,
+    .service-typ h2,
+    .phone h2,
+    .mail h2,
+    .spread-text p
+    {
         font-size: 15px;
+        text-align: center;
+    }
+
+    .details-tab p{
+        text-align: left;
     }
 
 
+    .spread-text{
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+    /* Helpline UI */
+    .help-logo{
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    .cases p{
+        font-size: 11px;
+    }
+
+}
+
+
+@media all and (max-width:320px){
+    body{
+        text-align: center;
+    }
+
+    .landing-logo,
+    .help-logo{
+        width: 250px;
+        margin-top: 30px;
+    }
 }

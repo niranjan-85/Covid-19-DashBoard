@@ -10,7 +10,7 @@ explore.addEventListener('click',(event)=>{
     sidebar.classList.toggle('open');
 })
 
-//close navbar if link is clicked
+// close navbar if link is clicked
 
 links.forEach(item => {
     item.addEventListener('click',()=>{
